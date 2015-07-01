@@ -1,3 +1,8 @@
+Kid.destroy_all
+House.destroy_all
+Candy.destroy_all
+Bucket.destroy_all
+
 # create kids
 kristen = Kid.create(:name => "Kristen Wiig", :age => 8)
 kristen.bucket = Bucket.new

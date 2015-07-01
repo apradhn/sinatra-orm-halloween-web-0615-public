@@ -1,4 +1,14 @@
-<h1>All Kids</h1>
+<div class="col-md-8">
+  <h1>All Kids</h1>
 
-<!-- iterate through all kids here -->
-<!-- remember to link their names to their show pages -->
+  <!-- iterate through all kids here -->
+  <!-- remember to link their names to their show pages -->
+  <ul>
+    <% @kids.each do |kid| %>
+        <li><a href="/kids/<%= kid.id %>"><%= kid.name %></a></li>
+        <li><%= kid.age %></li>
+        <li><%= kid.feeling %></li>
+    <% end %>    
+  </ul>
+
+</div>
